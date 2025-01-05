@@ -48,5 +48,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+  <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>App needs Bluetooth to scan for devices</string>
+  <key>NSBluetoothPeripheralUsageDescription</key>
+  <string>App needs Bluetooth to scan for devices</string>
 </dict>
 </plist>
