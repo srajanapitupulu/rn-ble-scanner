@@ -1,4 +1,14 @@
-import { NativeEventEmitter, NativeModules } from 'react-native';
+import { NativeEventEmitter, NativeModules, Platform } from 'react-native';
+
+const { BleModule } = NativeModules;
+
+console.log('Available Native Modules:', NativeModules);
+console.log('BleModule:', BleModule);
+
+if (!BleModule) {
+    throw new Error('BleModule is not loaded. Available modules: ' +
+        JSON.stringify(NativeModules));
+}
 
 export interface BleScanOptions {
     allowDuplicates?: boolean;
